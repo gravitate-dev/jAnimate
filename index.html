@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Page Transitions</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="animations.css"/>
+<script src="jquery.js"></script>
+<script src="jAnimate.js"></script>
+<script>
+$(function() {
+var animations_in = "reset moveToLeft moveFromLeft moveToRight moveFromRight moveToTop moveFromTop moveToBottom moveFromBottom fade moveToLeftFade moveFromLeftFade moveToRightFade moveFromRightFade moveToTopFade moveFromTopFade moveToBottomFade moveFromBottomFade moveToLeftEasing moveToRightEasing moveToTopEasing moveToBottomEasing scaleDown scaleUp scaleUpDown scaleDownUp scaleDownCenter scaleUpCenter rotateRightSideFirst rotateLeftSideFirst rotateTopSideFirst rotateBottomSideFirst flipOutRight flipInLeft flipOutLeft flipInRight flipOutTop flipInBottom flipOutBottom flipInTop rotateFall rotateOutNewspaper rotateInNewspaper rotatePushLeft rotatePushRight rotatePushTop rotatePushBottom rotatePullRight rotatePullLeft rotatePullTop rotatePullBottom rotateFoldRight rotateFoldLeft rotateFoldTop rotateFoldBottom rotateUnfoldLeft rotateUnfoldRight rotateUnfoldTop rotateUnfoldBottom rotateRoomLeftOut rotateRoomLeftIn rotateRoomRightOut rotateRoomRightIn rotateRoomTopOut rotateRoomTopIn rotateRoomBottomOut rotateRoomBottomIn rotateCubeLeftOut rotateCubeLeftIn rotateCubeRightOut rotateCubeRightIn rotateCubeTopOut rotateCubeTopIn rotateCubeBottomOut rotateCubeBottomIn rotateCarouselLeftOut rotateCarouselLeftIn rotateCarouselRightOut rotateCarouselRightIn rotateCarouselTopOut rotateCarouselTopIn rotateCarouselBottomOut rotateCarouselBottomIn rotateSidesOut rotateSidesIn rotateSlideOut rotateSlideIn";
+var animations_in2 = "moveFromRight";
+$(document).on('click','body',function(event){
+
+
+$('#animateme').jAnimate({
+						animations: animations_in,
+						removeAtEnd: false,
+						hideAtEnd: true
+						});
+//$('div').witchSetAnimation("scaleDown");
+});
+});
+</script>
+<style>
+#animateme2{
+background-color: red;
+}
+</style>
+</head>
+<body>
+	<div id="animateme" class="wfullscreen wpage wpage-ontop">
+		<h1><span>My collection of</span>I am a div tag 1</h1>
+	</div>
+	<div id="animateme2" class="wfullscreen wpage">
+		<h1><span>My collection of</span>I am a background</h1>
+	</div>
+	<!--
+	<div class="fullscreen pt-page-scaleDown2">
+		I am a div tag 2
+	</div>
+	<div class="fullscreen pt-page-scaleDown3">
+		I am a div tag 3
+	</div>
+	<div class="fullscreen pt-page-scaleDown4">
+		I am a div tag 4
+	</div> -->
+</body>
+</html>
