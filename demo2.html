@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Page Transitions</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="animations.css"/>
+<script src="jquery.js"></script>
+<script src="jAnimate.js"></script>
+<script>
+$(function() {
+var animations_in = "reset moveToLeft moveFromLeft moveToRight moveFromRight moveToTop moveFromTop moveToBottom moveFromBottom fade moveToLeftFade moveFromLeftFade moveToRightFade moveFromRightFade moveToTopFade moveFromTopFade moveToBottomFade moveFromBottomFade moveToLeftEasing moveToRightEasing moveToTopEasing moveToBottomEasing scaleDown scaleUp scaleUpDown scaleDownUp scaleDownCenter scaleUpCenter rotateRightSideFirst rotateLeftSideFirst rotateTopSideFirst rotateBottomSideFirst flipOutRight flipInLeft flipOutLeft flipInRight flipOutTop flipInBottom flipOutBottom flipInTop rotateFall rotateOutNewspaper rotateInNewspaper rotatePushLeft rotatePushRight rotatePushTop rotatePushBottom rotatePullRight rotatePullLeft rotatePullTop rotatePullBottom rotateFoldRight rotateFoldLeft rotateFoldTop rotateFoldBottom rotateUnfoldLeft rotateUnfoldRight rotateUnfoldTop rotateUnfoldBottom rotateRoomLeftOut rotateRoomLeftIn rotateRoomRightOut rotateRoomRightIn rotateRoomTopOut rotateRoomTopIn rotateRoomBottomOut rotateRoomBottomIn rotateCubeLeftOut rotateCubeLeftIn rotateCubeRightOut rotateCubeRightIn rotateCubeTopOut rotateCubeTopIn rotateCubeBottomOut rotateCubeBottomIn rotateCarouselLeftOut rotateCarouselLeftIn rotateCarouselRightOut rotateCarouselRightIn rotateCarouselTopOut rotateCarouselTopIn rotateCarouselBottomOut rotateCarouselBottomIn rotateSidesOut rotateSidesIn rotateSlideOut rotateSlideIn";
+var animations_in2 = "moveFromRight";
+
+$('select').change( function() {
+
+$('#myimage, #mydiv, li').jAnimate($("select option:selected:first").text());
+//$('#mydiv').jAnimate($("select option:selected:first").text());
+});	
+});
+</script>
+<style>
+#myselect{
+height:300px;
+}
+li {
+font-size: 5em; 
+background-color:blue;
+color:white;
+padding:25px;
+}
+</style>
+</head>
+<body>
+<select id="myselect" multiple="yes">
+<option data-a='reset'>reset</option>
+<option data-a='moveToLeft'>moveToLeft</option>
+<option data-a='moveFromLeft'>moveFromLeft</option>
+<option data-a='moveToRight'>moveToRight</option>
+<option data-a='moveFromRight'>moveFromRight</option>
+<option data-a='moveToTop'>moveToTop</option>
+<option data-a='moveFromTop'>moveFromTop</option>
+<option data-a='moveToBottom'>moveToBottom</option>
+<option data-a='moveFromBottom'>moveFromBottom</option>
+<option data-a='fade'>fade</option>
+<option data-a='moveToLeftFade'>moveToLeftFade</option>
+<option data-a='moveFromLeftFade'>moveFromLeftFade</option>
+<option data-a='moveToRightFade'>moveToRightFade</option>
+<option data-a='moveFromRightFade'>moveFromRightFade</option>
+<option data-a='moveToTopFade'>moveToTopFade</option>
+<option data-a='moveFromTopFade'>moveFromTopFade</option>
+<option data-a='moveToBottomFade'>moveToBottomFade</option>
+<option data-a='moveFromBottomFade'>moveFromBottomFade</option>
+<option data-a='moveToLeftEasing'>moveToLeftEasing</option>
+<option data-a='moveToRightEasing'>moveToRightEasing</option>
+<option data-a='moveToTopEasing'>moveToTopEasing</option>
+<option data-a='moveToBottomEasing'>moveToBottomEasing</option>
+<option data-a='scaleDown'>scaleDown</option>
+<option data-a='scaleUp'>scaleUp</option>
+<option data-a='scaleUpDown'>scaleUpDown</option>
+<option data-a='scaleDownUp'>scaleDownUp</option>
+<option data-a='scaleDownCenter'>scaleDownCenter</option>
+<option data-a='scaleUpCenter'>scaleUpCenter</option>
+<option data-a='rotateRightSideFirst'>rotateRightSideFirst</option>
+<option data-a='rotateLeftSideFirst'>rotateLeftSideFirst</option>
+<option data-a='rotateTopSideFirst'>rotateTopSideFirst</option>
+<option data-a='rotateBottomSideFirst'>rotateBottomSideFirst</option>
+<option data-a='flipOutRight'>flipOutRight</option>
+<option data-a='flipInLeft'>flipInLeft</option>
+<option data-a='flipOutLeft'>flipOutLeft</option>
+<option data-a='flipInRight'>flipInRight</option>
+<option data-a='flipOutTop'>flipOutTop</option>
+<option data-a='flipInBottom'>flipInBottom</option>
+<option data-a='flipOutBottom'>flipOutBottom</option>
+<option data-a='flipInTop'>flipInTop</option>
+<option data-a='rotateFall'>rotateFall</option>
+<option data-a='rotateOutNewspaper'>rotateOutNewspaper</option>
+<option data-a='rotateInNewspaper'>rotateInNewspaper</option>
+<option data-a='rotatePushLeft'>rotatePushLeft</option>
+<option data-a='rotatePushRight'>rotatePushRight</option>
+<option data-a='rotatePushTop'>rotatePushTop</option>
+<option data-a='rotatePushBottom'>rotatePushBottom</option>
+<option data-a='rotatePullRight'>rotatePullRight</option>
+<option data-a='rotatePullLeft'>rotatePullLeft</option>
+<option data-a='rotatePullTop'>rotatePullTop</option>
+<option data-a='rotatePullBottom'>rotatePullBottom</option>
+<option data-a='rotateFoldRight'>rotateFoldRight</option>
+<option data-a='rotateFoldLeft'>rotateFoldLeft</option>
+<option data-a='rotateFoldTop'>rotateFoldTop</option>
+<option data-a='rotateFoldBottom'>rotateFoldBottom</option>
+<option data-a='rotateUnfoldLeft'>rotateUnfoldLeft</option>
+<option data-a='rotateUnfoldRight'>rotateUnfoldRight</option>
+<option data-a='rotateUnfoldTop'>rotateUnfoldTop</option>
+<option data-a='rotateUnfoldBottom'>rotateUnfoldBottom</option>
+<option data-a='rotateRoomLeftOut'>rotateRoomLeftOut</option>
+<option data-a='rotateRoomLeftIn'>rotateRoomLeftIn</option>
+<option data-a='rotateRoomRightOut'>rotateRoomRightOut</option>
+<option data-a='rotateRoomRightIn'>rotateRoomRightIn</option>
+<option data-a='rotateRoomTopOut'>rotateRoomTopOut</option>
+<option data-a='rotateRoomTopIn'>rotateRoomTopIn</option>
+<option data-a='rotateRoomBottomOut'>rotateRoomBottomOut</option>
+<option data-a='rotateRoomBottomIn'>rotateRoomBottomIn</option>
+<option data-a='rotateCubeLeftOut'>rotateCubeLeftOut</option>
+<option data-a='rotateCubeLeftIn'>rotateCubeLeftIn</option>
+<option data-a='rotateCubeRightOut'>rotateCubeRightOut</option>
+<option data-a='rotateCubeRightIn'>rotateCubeRightIn</option>
+<option data-a='rotateCubeTopOut'>rotateCubeTopOut</option>
+<option data-a='rotateCubeTopIn'>rotateCubeTopIn</option>
+<option data-a='rotateCubeBottomOut'>rotateCubeBottomOut</option>
+<option data-a='rotateCubeBottomIn'>rotateCubeBottomIn</option>
+<option data-a='rotateCarouselLeftOut'>rotateCarouselLeftOut</option>
+<option data-a='rotateCarouselLeftIn'>rotateCarouselLeftIn</option>
+<option data-a='rotateCarouselRightOut'>rotateCarouselRightOut</option>
+<option data-a='rotateCarouselRightIn'>rotateCarouselRightIn</option>
+<option data-a='rotateCarouselTopOut'>rotateCarouselTopOut</option>
+<option data-a='rotateCarouselTopIn'>rotateCarouselTopIn</option>
+<option data-a='rotateCarouselBottomOut'>rotateCarouselBottomOut</option>
+<option data-a='rotateCarouselBottomIn'>rotateCarouselBottomIn</option>
+<option data-a='rotateSidesOut'>rotateSidesOut</option>
+<option data-a='rotateSidesIn'>rotateSidesIn</option>
+<option data-a='rotateSlideOut'>rotateSlideOut</option>
+<option data-a='rotateSlideIn'>rotateSlideIn</option>
+</select>
+<img id="myimage" src="jquery.png"/>
+<div id="mydiv" style="font-size: 5em; background-color:blue;color:white;padding:25px;">I am just a div</div>
+<ul>
+<li>I am a list</li>
+<li>Of things to animate</li>
+</ul>
+</body>
+</html>
